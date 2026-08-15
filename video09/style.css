@@ -1,0 +1,21 @@
+.firstclass{
+    background-color: red;
+}
+
+/*
+.2ndclass{
+    
+}
+*/
+
+#firstdiv{
+    background-color: purple;
+}
+
+/*
+so here we called the div tag using classname and id 
+given to the div tag
+
+through the link we can access link using the link or website id
+
+*/
