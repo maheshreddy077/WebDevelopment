@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Model in css : </title>
+    <style>
+
+        .boX{
+            background-color: red;
+        }
+
+        .box1{
+            background-color: yellow;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            height: 200px;
+
+           /*combining both two should make height == 200
+            border + height == 200px;*/
+            box-sizing: border-box;
+        }
+
+        .box{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- case 1 : u want to change all box prop :  use box 
+       case 2 : if u only want to use box 1 :  then use box 1 -->
+
+    <div class="box box1"> Hello , this is Boxing in css </div>
+    <div class="box box2" >Class using two different classes namees in </div>
+</body>
+</html>

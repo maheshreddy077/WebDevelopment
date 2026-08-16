@@ -1,93 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> selectors in css </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selectors in css</title>
 
     <style>
+      /* without selectors it will select all the div tags*/
+      div {
+        background-color: green;
+      }
 
-        /* without selectors it will select all the div tags*/
-        div{
-            background-color: green;
-        }
+      /* class selector */
+      .red {
+        background-color: red;
+      }
 
-        /* class selector */
-        .red{
-            background-color: red;
-        }
+      /* id selector */
+      #yellow {
+        background-color: yellow;
+      }
 
-        /* id selector */
-        #yellow{
-            background-color: yellow;
-        }
-
-        /* child selector :: if it was a child of the div then it is 
+      /* child selector :: if it was a child of the div then it is 
         selected not nested , only direct */
-        div > p {
-            background-color: rgb(158, 36, 36);
-            color: black;
-        }
+      div > p {
+        background-color: rgb(158, 36, 36);
+        color: black;
+      }
 
-       /* Descendent selector :: if tht tag is present in the div nested or 
+      /* Descendent selector :: if tht tag is present in the div nested or 
         in any other way automatically it got selected*/
-        div p {
-            background-color: aqua;
-            color: black;
-        }
+      div p {
+        background-color: aqua;
+        color: black;
+      }
 
-        /* universal selector :: selecting all */
-        *{
-            margin: 0;
-            padding: 0;
-        }
+      /* universal selector :: selecting all */
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        /* pseudo selector :: */
+      /* pseudo selector :: */
 
-        /* visited links get yellow*/
-        a:visited{
-            color: yellow;
-        }
+      /* visited links get yellow*/
+      a:visited {
+        color: yellow;
+      }
 
-        /* becomes green when not visited */
-        a:link{
-            color: green;
-        }
+      /* becomes green when not visited */
+      a:link {
+        color: green;
+      }
 
-        /* When you press and hold the mouse button on the link, 
+      /* When you press and hold the mouse button on the link, 
         its background becomes red. */
-        a:active{
-            background-color: red;
-        }
+      a:active {
+        background-color: red;
+      }
 
-        /* when u keep ur cursor over tht link it will become black */
-        a:hover{
-            background-color: black;
-        }
-
+      /* when u keep ur cursor over tht link it will become black */
+      a:hover {
+        background-color: black;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <article>
-            <p> nested or anything it will access unlike child selector</p>
-        </article>
+      <article>
+        <p>nested or anything it will access unlike child selector</p>
+      </article>
     </div>
     <div>
-        Hii these are css seelectors : 
-        <p> not nested only direct :: hello this is child selector </p>
+      Hii these are css seelectors :
+      <p>not nested only direct :: hello this is child selector</p>
     </div>
 
-    <div class="red">
-        Div using class : .
-    </div>
+    <div class="red">Div using class : .</div>
 
-    <div id="yellow">
-        Div using id : #
-    </div>
+    <div id="yellow">Div using id : #</div>
 
     <!-- pesoudo selectors -->
     <a href="www.googlee.com" target="_blank">Google</a>
     <a href="www.Facebooke.com">Facebook</a>
-</body>
+  </body>
 </html>

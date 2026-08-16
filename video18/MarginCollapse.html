@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse : </title>
+
+    <style>
+        .box1{
+            background-color: aqua;
+            margin: 10px;
+            border: 3px solid black;
+            height: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box2{
+            background-color: peachpuff;
+            margin: 10px;
+            border: 3px solid black;
+            padding: 10px;
+            height: 200px;
+            box-sizing: border-box;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- for only box 1 -->
+    <div class="box box1"> This is About Margin collapse : </div>
+
+    <!-- for only box 2 -->
+    <div class="box box2">Margin collapse : combining both the margins makes one spaces
+                          if you give margin as 50 , it will combine (box 1) 30 > 20 (box2)
+                        then box1 will be the margin for both </div>
+
+</body>
+</html>
