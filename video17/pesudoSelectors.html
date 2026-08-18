@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in html </title>
+    
+      /* pseudo selector :: */
+
+      /* visited links get yellow*/
+      a:visited {
+        color: yellow;
+      }
+
+      /* becomes green when not visited */
+      a:link {
+        color: green;
+      }
+
+      /* When you press and hold the mouse button on the link, 
+        its background becomes red. */
+      a:active {
+        background-color: red;
+      }
+
+      /* when u keep ur cursor over tht link it will become black */
+      a:hover {
+        background-color: black;
+      }
+      
+</head>
+<body>
+    <div>
+      <article>
+        <p>nested or anything it will access unlike child selector</p>
+      </article>
+    </div>
+    <div>
+      Hii these are css seelectors :
+      <p>not nested only direct :: hello this is child selector</p>
+    </div>
+
+    <div class="red">Div using class : .</div>
+
+    <div id="yellow">Div using id : #</div>
+
+    <!-- pesoudo selectors -->
+    <a href="www.googlee.com" target="_blank">Google</a>
+    <a href="www.Facebooke.com">Facebook</a>
+  </body>
+</body>
+</html>
