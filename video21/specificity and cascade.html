@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>specificity and cascade and important : </title>
+    <style>
+
+      /* The specificity of this selector is 1 */
+      h1{
+          color: aqua;
+      }
+
+       /* The specificity of this selector is 10 */
+      .red{
+          color: red;
+      }
+
+      /* The specificity of this selector is 10 */
+      /* now here h1 = 1 and yellow class = 10 so now 1+10=11 */
+      h1.yellow{
+          color: yellow;
+      }
+
+      /* The specificity of this selector is 10
+      !important: Gives a CSS property the highest priority.
+      !important ->  this gives more specifity above all only when it is an inline */
+      .blue{
+          color: blue !important;
+      }
+
+      /* This is an attribute selector : and The specificity of this selector is 10
+      [data-x=a]{
+          background-color: yellowgreen;
+      } */
+       
+
+      /* The specifity a=1+ maheshclass = 10 +  rohanclass = 10 + attribute slector =10 + pesudo selector = 10 
+      (total == 40 high priority) */
+      a.maheshclass.rohanclass[href]:hover{
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- inline specifity value u cant beat it has more specfity  -->
+    <h1 class="red" class="yellow" class="blue" data-x="a"> This is about specifity means (priority) </h1>
+
+  </body>
+</html>
+<!--
+CSS Cascade, Specificity & !important
+
+Cascade: When multiple CSS rules apply, CSS decides which rule wins.
+
+Specificity: More specific selectors have higher priority:
+
+ID > Class > Element
+
+!important: Gives a CSS property the highest priority.
+
+p { color: red; }
+.text { color: blue; }
+#para { color: green; }
+Priority: !important → Specificity → Last rule
+ -->
