@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="dom.js">
+  </head>
+  <body>
+    <script>
+      
+      // DOM (Document Object Model) is a representation of the HTML document that JavaScript uses to  (access and change) HTML elements.
+      document.title = "Mahesh's Doc";
+
+      console.log(document.body);
+      console.log(document.title);
+
+      // want to change style of any particular ele
+      document.body.style.backgroundColor = "green";
+
+      //BOM (Browser Object Model) allows JavaScript to interact with the browser itself, outside the webpage.
+      window.alert("Hello");
+      window.location.href = "https://google.com";
+
+    </script>
+  </body>
+</html>

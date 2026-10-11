@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise-06</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer {
+        background-color: lightgray;
+        position: relative;
+        border-radius: 5px;
+        border: 2px solid black;
+        left: 10px;
+        height: 90vh;
+        width: 35vw;
+      }
+      .inner {
+        background-color: rgb(245, 245, 245);
+        margin: 35px;
+        position: absolute;
+        border-radius: 5px;
+        border: 2px solid black;
+        height: 80vh;
+        width: 30vw;
+      }
+
+      .img {
+        border-radius: 10px;
+        margin: 3px;
+        padding: 3px;
+        padding-left: 3px;
+        height: 40vh;
+        width: 29vw;
+      }
+
+      .box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .sp {
+        width: 80px;
+        padding: 5px 10px;
+        border: 2px solid gainsboro;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      p {
+        opacity: 20px;
+        font-size: 19px;
+      }
+
+      .but{
+        justify-content: center;
+        border: 3px solid lightblue;
+        border-radius: 5px;
+        padding-left: 50px;
+        padding: 15px;
+        margin: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <img
+          src="https://images.unsplash.com/photo-1788888882364-7cf34cec52f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D"
+          alt="loading"
+          class="img"
+        />
+
+        <div class="box">
+          <span class="sp sp1">Nature</span>
+          <span class="sp sp2">Lake</span>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+          tempore quisquam quas, minima, vero accusamus at harum iste
+          dignissimos illum possimus veritatis voluptatum ex mollitia!
+        </p>
+
+        <button class="but">Read more</button>
+      </div>
+    </div>
+  </body>
+</html>

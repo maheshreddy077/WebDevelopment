@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS </title>
+    <style>
+
+        .li_types{
+            /* it doesnt include the list type inside in it */
+            list-style: disc red;
+            background-color: peachpuff;
+        }
+        
+        nav ul li{
+            list-style-type:upper-roman;
+
+            /* list-style-type: "emoji"; */
+            /* list-style-image: ; */
+            
+            /* it includes the list type into the list content */
+            list-style-position: inside;
+
+            border: 2px solid black;
+
+            /* we can add multiple at once */
+            list-style: disc inside red;
+
+            list-style-type: none;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="li_types" >
+        <ul>
+            <li>hiii</li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul>
+            <li>Hiii</li>
+            <li>Heloo</li>
+            <li>HeHe</li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>

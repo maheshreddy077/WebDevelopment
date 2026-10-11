@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VARIABLES :</title>
+    <style>
+
+      :root {
+        --color: rgb(207, 213, 33);
+        --seccolor: rgb(214, 40, 40);
+        --defpadding: 33px;
+        --defop:0.3;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .bod {
+        border: 2px solid var(--color);
+      }
+      .nav {
+        bakground-color: red;
+      }
+
+      .container {
+        /* opacity:0.2; */
+        opacity: var(--defop);
+        baclgournd-color: var(--seccolor);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      ul li {
+        list-style: none;
+        padding: var(--defpadding);
+      }
+
+      ul li:first-child {
+        --color: rgb(21, 64, 21);
+        background-color: var(--color, red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bod">hieee</div>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam
+      delectus iste consequatur ea voluptas. Delectus sint nulla a sit rerum
+      provident! Vero blanditiis, eligendi quibusdam nemo dolorem quam facilis
+      repellat dignissimos dolore cumque laboriosam pariatur repellendus ad
+      saepe dicta.
+    </div>
+  </body>
+</html>

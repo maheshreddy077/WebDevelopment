@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OVER FLOW</title>
+    <style>
+
+      .flow {
+        border: 2px solid black;
+        height: 10vh;
+        width: 30vw;
+        overflow: auto;
+        overflow: scroll;
+
+        /* 🧠 Important */
+        /* So remember the combination: */
+
+        /* gives in one single line, and if the text is too long, 
+        it will be cut off and an ellipsis will be shown at the end.  */
+        white-space: nowrap;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .flow_optimised{
+        border:2px solid black;
+        height:10vh;
+        width:20vw;
+
+        /* overflow-x:auto;
+        overflow-y:hidden; */
+
+        overflow: auto hidden;
+        overflow:scroll hidden;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque at ipsa
+      facere numquam optio, adipisci praesentium commodi fugit quia, aspernatur
+      enim quos ducimus temporibus sapiente dolore ipsum facilis reiciendis!
+      Possimus adipisci molestiae numquam minus magnam ratione voluptas minima
+      sequi!
+    </div>
+
+    <hr>
+    <div class="flow_optimised">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, 
+      vel! Impedit, tempore facilis. Tenetur corrupti perspiciatis m
+      aiores distinctio quibusdam voluptatum, repudiandae consectetur voluptatem vero, 
+      sint architecto ipsum soluta omnis exercitationem.
+    </>
+  </body>
+</html>

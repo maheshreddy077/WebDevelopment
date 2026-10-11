@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav span {
+        padding-bottom: 30px;
+        font-weight: 100;
+        font-size: 25px;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
+      nav img {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      body {
+        background-color: lightgray;
+      }
+
+      nav {
+        border: 2px solid black;
+
+        height: 60px;
+        width: 100vw;
+        background-color: darkblue;
+      }
+
+      nav ul {
+        padding-top: 15px;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: large;
+        padding-right: 30px;
+        list-style-type: none;
+        justify-content: flex-end;
+        display: flex;
+        gap: 40px;
+      }
+
+      nav ul a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        transform: scale(1.2);
+      }
+
+      nav ul a:hover {
+        color: yellow;
+      }
+
+      main {
+        border: 2px solid black;
+        height: 70vh;
+        background-color: white;
+      }
+
+      table {
+        margin: 80px auto;
+        font-size: 18px;
+      }
+
+      th {
+        background-color: lightblue;
+      }
+
+      th,
+      td {
+        padding: 15px 30px;
+      }
+
+      td {
+        background-color: #f5f5f5;
+      }
+
+      footer {
+        background-color: darkblue;
+        color: white;
+        height: 20vh;
+      }
+
+      .but {
+        background-color: rgb(198, 222, 222);
+        height: 30px;
+        width: 50px;
+        border-radius: 10px;
+      }
+
+      footer p {
+        text-align: center;
+        padding-top: 30px;
+        font-size: large;
+      }
+
+      nav ul .logo {
+        position: relative;
+        bottom: 15px;
+        margin-right: auto;
+      }
+
+      li:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="logo">
+            <img
+              height="40px"
+              width="40px"
+              class="image"
+              src="https://dheecodinglab.com/_next/static/media/dcl-logo.3e78564b.png"
+              alt=" dcl logo"
+            />
+          </div>
+          <li><a href="views.html" target="_blank">view Student</a></li>
+          <li><a href="pr.html" target="_blank">ussrrr</a></li>
+          <li><a href="us.html" target="_blank">prrrrr</a></li>
+          <li><button type="submit" class="but">login</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <table border="1">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Mahesh</td>
+          <td>23</td>
+          <td>mahesh@gmail.com</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; || Dhee coding lab</p>
+    </footer>
+  </body>
+</html>

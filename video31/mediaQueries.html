@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      @media screen and (orientaton: potrait) {
+       body{
+        border: 2px solid powderblue;
+       }
+      }
+
+      @media only screen and (max-width: 455px) {
+        /* after this max-width the color will become aqua  */
+
+        body {
+          background-color: blue;
+        }
+
+        .boxes {
+          flex-direction: column;
+        }
+      }
+
+      /* 
+        @media not | only mediatype and (expressions){
+            css code
+
+        } */
+
+      .boxes {
+        display: flex;
+      }
+
+      .box {
+        width: 344px;
+        height: 344px;
+        background-color: lightblue;
+        padding: 3px;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">hii</div>
+      <div class="box">hello</div>
+      <div class="box">bye</div>
+    </div>
+  </body>
+</html>

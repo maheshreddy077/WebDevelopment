@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float && clear</title>
+    <style>
+      .cards {
+        border: 2px solid black;
+        
+        /* fits in the boxes  */
+        display: flow-root;
+      }
+
+      img {
+        float: left;
+        /* float: right; */
+      }
+
+      .card {
+        border: 2px solid red;
+      }
+
+      .card:nth-child(3){
+        /* clear: right; */
+        /* clear: left; */
+        clear: both;
+        background-color:aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://imgs.search.brave.com/Z7fMo95Cofkt4dQCgknQoDbLNCqUWlK5ITDRh_eutiE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wZXRh/cGl4ZWwuY29tL2Fz/c2V0cy91cGxvYWRz/LzIwMjEvMTAvdW5z/cGxhc2hmZWF0LTgw/MHg0MjAuanBn"
+        alt=""
+        width="250"
+        height="200"
+      />
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quidem
+          ut praesentium beatae laborum, quibusdam soluta totam, eius culpa
+          corporis tempore! A autem saepe quam eaque labore perspiciatis odit
+          cumque!
+        </p>    
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          asperiores vel necessitatibus itaque magnam ratione esse deleniti
+          molestias nihil impedit ullam architecto perferendis eius cumque
+          praesentium consequatur provident nam, aspernatur dicta aut beatae
+          facere voluptatibus neque in? Libero earum sequi sunt officiis nostrum
+          reprehenderit praesentium at, quo voluptatibus soluta qui illum quos
+          asperiores enim consequatur! Voluptates accusamus voluptatibus
+          doloribus facere! Distinctio sed fugiat quisquam! Rem nulla eligendi
+          eius, consequuntur saepe corrupti aut consequatur dolorum nobis beatae
+          dolores quam? Quaerat accusamus fuga eum, voluptatem quos dignissimos
+          amet voluptas ullam, quam totam harum! Voluptate suscipit voluptatem
+          tenetur repellat illum recusandae, facilis dolorum.
+        </p>
+      </div>
+      <div class="card">card 3</div>
+    </div>
+  </body>
+</html>

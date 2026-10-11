@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display B -> Inline </title>
+    <style>
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .block{
+
+            border: 2px solid black;
+
+            /* ➡️ Stays in the same line and allows width/height.
+                   displays block line elements as inline elements */
+            display: inline-block;
+            padding: 44px;
+            width: 346px;
+            margin: 34px;
+        }
+
+        .block1{
+
+            /* it will remove the box and the space tht box consisting  
+            display: none; */
+
+            /* ➡️ Makes it easy to arrange child elements in a row/column. */
+            display: flex;
+
+            /* ➡️ Arranges children using rows and columns. */
+            display: grid;
+
+            /* box is gone and the space is left 
+            visibility: hidden; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="block block1">
+        This is a block element
+    </div>
+
+    <div class="block block2">
+        I'll make it as inline ele
+    </div>
+
+    <hr>
+    <span>
+       an inline element
+    </span>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MORE ON CSS SELECTORS</title>
+    <style>
+
+      .box:first-child{
+        background-color: yellow;
+      }
+
+      .boxes *{
+        font-size: 20px;
+        border: 2px solid red;
+      }
+
+      .boxes::after{
+        content:"this is after content used to insert after";
+      }
+
+      .boxes::before{
+        content: "this is before content used to insert before";
+        color: red;
+      }
+
+      ::selection{
+        /* for particular selected text */
+        background-color: green;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">Heyy this is more about on css</div>
+      <div class="box">Heyy this is more about on css</div>
+      <div class="box">Heyy this is more about on css</div>
+    </div>
+  </body>
+</html>

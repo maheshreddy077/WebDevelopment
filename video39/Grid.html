@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid property ::</title>
+    <style>
+      .container {
+        border: 2px solid yellow;
+
+        /* display grid property */
+        display: grid;
+
+        /* used to add spacing btw rows and columns */
+        grid-template-columns: 100px 120px 100px;
+        grid-template-rows: 100px 100px 100px;
+      }
+
+      .item {
+        border: 2px solid red;
+        height: 55px;
+        width: 55px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
